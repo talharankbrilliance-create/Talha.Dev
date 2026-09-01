@@ -873,7 +873,12 @@
   color: currentColor;
   fill: currentColor;
 }
-
+.float-chip svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
 </style>
 </head>
 <body>
@@ -1008,9 +1013,29 @@
               </div>
               <div class="block-tag">// premium_design.fig</div>
             </div>
-            <div class="float-chip chip-1">⚡ <span>98 PageSpeed</span></div>
-            <div class="float-chip chip-2">🎨 Divi + Elementor</div>
-            <div class="float-chip chip-3">📱 Fully responsive</div>
+           ```html
+<div class="float-chip chip-1">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor" d="m13 2-9 12h7l-1 8 9-13h-7l1-7Z"/>
+  </svg>
+  <span>98 PageSpeed</span>
+</div>
+
+<div class="float-chip chip-2">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor" d="M4 4h16v16H4V4Zm3 3v10h2V7H7Zm4 0v10h2V7h-2Zm4 0v10h2V7h-2Z"/>
+  </svg>
+  Divi + Elementor
+</div>
+
+<div class="float-chip chip-3">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor" d="M4 5h16v12H4V5Zm2 2v8h12V7H6Zm-2 12h16v-2H4v2Z"/>
+  </svg>
+  Fully responsive
+</div>
+```
+
           </div>
         </div>
       </div>
@@ -1018,7 +1043,7 @@
     
   </div>
 </header>
-```html
+
 <!-- Marquee Tech Ticker -->
 <div class="marquee-section">
   <div class="marquee-track">
@@ -1970,8 +1995,10 @@
       exp_section_eyebrow: 'Career so far', exp_section_h2: 'Work Experience',
       tl1_date:'Mar 2026 — Present', tl1_h:'WordPress Developer <span>· Rank Brilliance, Lahore</span>', tl1_p:'Developing and customizing WordPress websites using Elementor/Divi. Managing website updates, maintenance, and bug fixes, with a focus on speed and responsiveness.',
       tl2_date:'Nov 2024 — Jan 2026', tl2_h:'WordPress Specialist <span>· Zee IT Services, Sargodha</span>', tl2_p:'Built and shipped three full client websites  a digital marketing agency, a UK repair service, and a US healthcare billing provider  handling design, structure, and launch.',
-      tl3_date:'Mar 2022 — Feb 2026', tl3_h:'BS Software Engineering (Graduated) <span>· University of Lahore, Sargodha Campus</span>', tl3_p:'Core coursework in software engineering, alongside freelance WordPress work throughout the degree.',
-      contact_h2: "Let's build your<br>next website.",
+      tl3_date:'Mar 2022 — Feb 2026', ```js
+tl3_h:'Remote WordPress Developer <span>· Freelance / International Clients</span>', tl3_p:'Collaborated remotely with international clients on WordPress development projects — building, customizing, and maintaining sites, working on WooCommerce stores, and handling optimization and SEO improvements while managing communication and timelines from a distance.',
+```
+
       contact_p: "Have a WordPress project in mind  a new site, a redesign, or ongoing maintenance? I'd like to hear about it.",
       contact_btn1: 'Email me', contact_btn2: '+92 304 9444714',
       footer_p: 'WordPress developer building fast, responsive, premium‑feeling websites with Elementor and Divi  for clients in Pakistan, the UK, and the USA.',
